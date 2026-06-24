@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stages de Rudy Gaillot chez Aube Électronique : machine de découpe alimentaire, trajectoires, STM32, Qt, électronique.">
+  <title>Stages | Rudy Gaillot</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="logo" href="index.html"><span class="logo-mark">RG</span><span>Rudy Gaillot <small>Portfolio GEII</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="nav-links" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="sae.html">SAE</a>
+        <a href="stages.html" aria-current="page">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p class="eyebrow">Expérience professionnelle</p>
+        <h1>Stages et missions en entreprise</h1>
+        <p>Mes expériences chez Aube Électronique m’ont permis de relier le développement logiciel, l’électronique, la commande moteur, la documentation et l’intégration sur prototype.</p>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="section-title">
+        <h2>Parcours en entreprise</h2>
+        <p>Une chronologie simple pour comprendre l’évolution de mes missions.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Mars 2026 - Juin 2026</div>
+          <div>
+            <h3>Stage BUT3 - Aube Électronique</h3>
+            <p>Poursuite du développement d’une machine de découpe alimentaire : optimisation des trajectoires, simulation, interface opérateur, sauvegardes, communication STM32 et validation sur prototype.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Avril 2025 & Juin - Juillet 2025</div>
+          <div>
+            <h3>CDD - Bureau d’études</h3>
+            <p>Développement logiciel industriel, programmation d’IHM et logique de fonctionnement machine.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Janvier 2025 - Mars 2025</div>
+          <div>
+            <h3>Stage BUT2 - Aube Électronique</h3>
+            <p>Initialisation d’une machine agroalimentaire : cahier des charges, choix de composants et programmation Raspberry Pi.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="section-title">
+        <h2>Stage BUT3 : machine de découpe alimentaire</h2>
+        <p>La mission principale consistait à passer d’un logiciel de démonstration vers une chaîne plus fiable et testable sur prototype.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <div class="icon">🧭</div>
+          <h3>Planification de trajectoires</h3>
+          <p>Conversion de formes graphiques en segments, choix de points de départ, réduction des déplacements à vide, gestion des trous et contours fermés, préparation de profils de mouvement.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🖥️</div>
+          <h3>IHM, simulation et sauvegarde</h3>
+          <p>Travail sur l’interface C++/Qt, affichage de progression, simulation, sauvegarde et rechargement des dispositions, fiabilisation des données JSON.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔌</div>
+          <h3>Communication STM32</h3>
+          <p>Préparation de données cohérentes avec la commande des moteurs, échanges avec la carte NUCLEO-G491RE et prise en compte des retours d’état.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧪</div>
+          <h3>Validation sur prototype</h3>
+          <p>Essais sur portique trois axes avec un stylo à la place de l’outil de découpe hydraulique pour vérifier l’échelle, les axes et l’ordre des mouvements.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="grid two">
+        <div class="panel">
+          <h2>Architecture travaillée</h2>
+          <p>L’architecture sépare les fonctions de haut niveau et la commande temps réel : application C++/Qt pour l’IHM et les calculs, Raspberry Pi 5 prévue pour l’intégration finale, STM32 pour la commande temps réel, drivers SANMOTION pour les moteurs pas à pas.</p>
+          <div class="tags"><span class="tag">Qt</span><span class="tag">Raspberry Pi 5</span><span class="tag">STM32</span><span class="tag">UART</span><span class="tag">Drivers moteurs</span></div>
+        </div>
+        <div class="panel">
+          <h2>Bilan personnel</h2>
+          <p>Ce stage a renforcé ma vision système : une trajectoire logicielle doit rester compatible avec le matériel, les contraintes opérateur, la sécurité, la maintenance et la transmission à l’équipe.</p>
+          <ul class="check-list">
+            <li>Meilleure méthode de débogage sur système complet.</li>
+            <li>Importance de la documentation et des tests reproductibles.</li>
+            <li>Compréhension plus concrète du lien entre logiciel, électronique et mécanique.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-inner"><span>© <span data-year></span> Rudy Gaillot</span><a href="documents.html">Rapports de stage</a></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

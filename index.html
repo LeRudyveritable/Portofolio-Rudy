@@ -2,10 +2,120 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Rudy Gaillot, étudiant en BUT GEII parcours Électronique et Systèmes Embarqués : compétences, SAE, stages, rapports et CV.">
+  <title>Rudy Gaillot | Portfolio BUT GEII</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Bienvenue sur mon site</h1>
-  <p>Ce site est hébergé avec GitHub Pages.</p>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="logo" href="index.html" aria-label="Accueil du portfolio de Rudy Gaillot">
+        <span class="logo-mark">RG</span>
+        <span>Rudy Gaillot <small>Portfolio GEII</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="nav-links" id="menu">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="sae.html">SAE</a>
+        <a href="stages.html">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="hero-card">
+        <p class="eyebrow">BUT GEII 3e année • Systèmes embarqués</p>
+        <h1>Portfolio de Rudy Gaillot</h1>
+        <p class="lead">Étudiant en Génie Électrique et Informatique Industrielle, parcours Électronique et Systèmes Embarqués. Ce portfolio présente mes compétences, mes réalisations en SAE, mes stages et mes documents professionnels.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="competences.html">Voir mes compétences</a>
+          <a class="button secondary" href="documents.html">Accéder aux documents</a>
+        </div>
+      </div>
+
+      <aside class="quick-profile" aria-label="Résumé du profil">
+        <div class="profile-top">
+          <div class="avatar" aria-hidden="true">RG</div>
+          <h2>Profil technique</h2>
+          <p>Électronique, programmation embarquée, automatisme, test, mesure et intégration système.</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>GEII</strong><span>Parcours ESE</span></div>
+          <div class="stat"><strong>2023-2026</strong><span>IUT de Troyes</span></div>
+          <div class="stat"><strong>C/C++</strong><span>Qt, embarqué</span></div>
+          <div class="stat"><strong>STM32</strong><span>Intégration & tests</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section compact">
+      <div class="section-title">
+        <h2>Ce que contient le portfolio</h2>
+        <p>Le site est organisé en plusieurs pages pour faciliter la lecture par un enseignant, un recruteur ou un tuteur de stage.</p>
+      </div>
+      <div class="grid four"></div>
+      <div class="grid three">
+        <article class="card">
+          <div class="icon">🎯</div>
+          <h3>Compétences GEII</h3>
+          <p>Une lecture claire par compétences : Concevoir, Vérifier, Maintenir, Implanter et Intégrer, avec des exemples concrets.</p>
+          <a class="button ghost" href="competences.html">Ouvrir</a>
+        </article>
+        <article class="card">
+          <div class="icon">🛠️</div>
+          <h3>Réalisations SAE</h3>
+          <p>Projets académiques et personnels : FPGA, traitement d’image, robotique, IoT, régulation et infrastructure Linux.</p>
+          <a class="button ghost" href="sae.html">Ouvrir</a>
+        </article>
+        <article class="card">
+          <div class="icon">📄</div>
+          <h3>Rapports et CV</h3>
+          <p>Une page dédiée aux documents à télécharger : CV français, CV anglais, rapports de stage et fiche de compétences.</p>
+          <a class="button ghost" href="documents.html">Ouvrir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="grid two">
+        <div class="panel">
+          <h2>Objectif du site</h2>
+          <p>Présenter un parcours cohérent autour de l’électronique et des systèmes embarqués, en montrant à la fois les compétences techniques, les projets réalisés et la capacité à documenter un travail.</p>
+          <ul class="check-list">
+            <li>Navigation simple sur plusieurs pages.</li>
+            <li>Design responsive, lisible sur téléphone et ordinateur.</li>
+            <li>Pages prêtes pour ajouter des PDF et des captures de projets.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Points forts mis en avant</h2>
+          <p>Le contenu insiste sur la polyvalence du BUT GEII : matériel, logiciel, automatisme, validation et travail en équipe.</p>
+          <div class="tags">
+            <span class="tag">C/C++</span>
+            <span class="tag">Qt</span>
+            <span class="tag">VHDL / FPGA</span>
+            <span class="tag">KiCad</span>
+            <span class="tag">STM32</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">UART / I2C / SPI / CAN</span>
+            <span class="tag">Test & mesure</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span data-year></span> Rudy Gaillot — Portfolio BUT GEII</span>
+      <a href="mailto:rudy.gaillot10@gmail.com">Contact</a>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
