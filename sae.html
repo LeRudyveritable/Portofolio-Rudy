@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="SAE et projets de Rudy Gaillot : systèmes embarqués, électronique, automatisme, robotique et régulation.">
+  <title>SAE et projets | Rudy Gaillot</title>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Accueil du portfolio de Rudy Gaillot">
+        <span class="brand-symbol" aria-hidden="true"><span></span></span>
+        <span class="brand-text"><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span><em>Menu</em></button>
+      <div class="nav-links" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="competences.html">Compétences</a>
+        <a href="sae.html" aria-current="page">SAE / Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+    </nav>
+  </header>
+  <main id="contenu">
+    <section class="page-hero circuit-bg small"><div class="page-hero-content reveal"><p class="eyebrow"><span></span>SAE & réalisations</p><h1>Des projets présentés clairement, avec leurs preuves PDF.</h1><p>Cette page rassemble les SAE de première année, les projets plus avancés et la SAE de 3e année sur la régulation de température du local LTG.</p></div></section>
+
+    <section class="section no-bottom"><div class="filter-bar reveal"><button class="filter-btn active" data-filter="all" type="button">Tout</button><button class="filter-btn" data-filter="premiere" type="button">1re année</button><button class="filter-btn" data-filter="troisieme" type="button">3e année</button><button class="filter-btn" data-filter="robotique" type="button">Robotique</button><button class="filter-btn" data-filter="electronique" type="button">Électronique</button><button class="filter-btn" data-filter="embarque" type="button">Embarqué / FPGA</button><button class="filter-btn" data-filter="signal" type="button">Signal</button></div></section>
+
+    <section class="section project-grid" id="projets">
+      
+        <article class="project-card reveal" id="regulation-ltg" data-category="troisieme">
+          <div class="project-media"><img src="sae-regulation-temperature-ltg.jpg" alt="Aperçu de Régulation température du local LTG" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">3e année · Systèmes embarqués</p>
+            <h2>Régulation température du local LTG</h2>
+            <p><strong>Objectif :</strong> Concevoir et tester un système de régulation capable de surveiller un local technique et d’activer des ventilateurs au-dessus de 22 °C.</p>
+            <p><strong>Travail mis en avant :</strong> Architecture capteurs + ESP32-H2 + relais + Home Assistant/Zigbee, commande des ventilateurs, calcul thermique, tests et analyse des limites.</p>
+            <div class="tags"><span>ESP32-H2</span><span>Home Assistant</span><span>Zigbee</span><span>DHT22</span><span>Relais</span><span>Ventilation</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Intégrer</span><span>Vérifier</span><span>Maintenir</span></div>
+            <a class="btn btn-secondary" href="SAE_3A_regulation-temperature-local-LTG_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+    </section>
+
+    <section class="section surface" id="sae-premiere-annee">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span>SAE de première année</p><h2>Les SAE 0 à 5 sont maintenant intégrées au portfolio.</h2><p>Chaque fiche PDF explique le but de la SAE, le contexte, le travail réalisé, les compétences évaluées et le bilan personnel.</p></div>
+      <div class="project-grid">
+        
+        <article class="project-card reveal" id="sae0-carte" data-category="premiere">
+          <div class="project-media"><img src="sae-0-carte-electronique.jpg" alt="Aperçu de SAE 0 · Carte électronique" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">1re année · Électronique</p>
+            <h2>SAE 0 · Carte électronique</h2>
+            <p><strong>Objectif :</strong> Découvrir les bases de la réalisation électronique : composants, carte physique, câblage et contrôle visuel.</p>
+            <p><strong>Travail mis en avant :</strong> Observation de la carte, identification des zones fonctionnelles, respect du câblage et vérification méthodique du montage.</p>
+            <div class="tags"><span>Carte électronique</span><span>Composants</span><span>Câblage</span><span>Contrôle visuel</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Vérifier</span></div>
+            <a class="btn btn-secondary" href="SAE_0_carte-electronique_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="sae1-multimetre" data-category="premiere">
+          <div class="project-media"><img src="sae-1-multimetre.jpg" alt="Aperçu de SAE 1 · Multimètre" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">1re année · Mesure</p>
+            <h2>SAE 1 · Multimètre</h2>
+            <p><strong>Objectif :</strong> Comprendre et utiliser les principes de mesure électrique : tension, courant, résistance et interprétation des valeurs.</p>
+            <p><strong>Travail mis en avant :</strong> Utilisation du multimètre comme outil de diagnostic, choix du calibre, respect des polarités et analyse des résultats.</p>
+            <div class="tags"><span>Multimètre</span><span>Mesure</span><span>Diagnostic</span><span>Sécurité électrique</span></div>
+            <div class="skill-badges"><span>Vérifier</span><span>Maintenir</span></div>
+            <a class="btn btn-secondary" href="SAE_1_multimetre_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="sae2-regulateur" data-category="premiere">
+          <div class="project-media"><img src="sae-2-regulateur-temperature.jpg" alt="Aperçu de SAE 2 · Régulateur de température" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">1re année · Régulation</p>
+            <h2>SAE 2 · Régulateur de température</h2>
+            <p><strong>Objectif :</strong> Étudier un système capable de réguler une température à partir d’une mesure, d’une consigne et d’une action de correction.</p>
+            <p><strong>Travail mis en avant :</strong> Analyse du besoin, compréhension du principe de régulation, prototype et essais pour comparer le comportement à la consigne.</p>
+            <div class="tags"><span>Capteur</span><span>Actionneur</span><span>Régulation</span><span>Prototype</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Vérifier</span></div>
+            <a class="btn btn-secondary" href="SAE_2_regulateur-de-temperature_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="sae3-tri-automatisme" data-category="premiere">
+          <div class="project-media"><img src="sae-3-automatisme-tri-pieces.jpg" alt="Aperçu de SAE 3 · Automatisme tri de pièces" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">1re année · Automatisme</p>
+            <h2>SAE 3 · Automatisme tri de pièces</h2>
+            <p><strong>Objectif :</strong> Commander un système de tri de pièces avec une logique d’automatisme : détection, décision, action et validation.</p>
+            <p><strong>Travail mis en avant :</strong> Identification des entrées/sorties, structuration du cycle de tri, tests de séquence et correction des erreurs de détection ou de commande.</p>
+            <div class="tags"><span>Capteurs</span><span>Actionneurs</span><span>Automatisme</span><span>Séquence</span></div>
+            <div class="skill-badges"><span>Implanter</span><span>Intégrer</span><span>Vérifier</span></div>
+            <a class="btn btn-secondary" href="SAE_3_automatisme-tri-de-pieces_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="sae4-tri-energie" data-category="premiere">
+          <div class="project-media"><img src="sae-4-energie-tri-pieces.jpg" alt="Aperçu de SAE 4 · Énergie tri de pièces" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">1re année · Énergie</p>
+            <h2>SAE 4 · Énergie tri de pièces</h2>
+            <p><strong>Objectif :</strong> Comprendre la partie énergie d’un système de tri : alimentation, protections, distribution électrique et vérification avant mise sous tension.</p>
+            <p><strong>Travail mis en avant :</strong> Lecture de l’armoire électrique, organisation du câblage, rôle des protections et contrôle de sécurité avant fonctionnement.</p>
+            <div class="tags"><span>Armoire électrique</span><span>Protections</span><span>Borniers</span><span>Sécurité</span></div>
+            <div class="skill-badges"><span>Intégrer</span><span>Vérifier</span><span>Maintenir</span></div>
+            <a class="btn btn-secondary" href="SAE_4_energie-tri-de-pieces_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="sae5-robot-tennis" data-category="premiere">
+          <div class="project-media"><img src="sae-5-robot-tennis.jpg" alt="Aperçu de SAE 5 · Robot joueur de tennis" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">1re année · Robotique</p>
+            <h2>SAE 5 · Robot joueur de tennis</h2>
+            <p><strong>Objectif :</strong> Développer ou compléter un robot capable d’agir dans un contexte de jeu de tennis miniature.</p>
+            <p><strong>Travail mis en avant :</strong> Carte d’interface, câblage, logique de commande, tests de continuité et corrections pour obtenir un comportement cohérent.</p>
+            <div class="tags"><span>Robot mobile</span><span>Carte interface</span><span>Programmation</span><span>Tests</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Intégrer</span><span>Vérifier</span></div>
+            <a class="btn btn-secondary" href="SAE_5_robot-joueur-de-tennis_Rudy_Gaillot.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projets-avances">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span>Autres SAE et projets</p><h2>Projets déjà présents sur le site.</h2></div>
+      <div class="project-grid">
+        
+        <article class="project-card reveal" id="lidar" data-category="robotique">
+          <div class="project-media"><img src="sae-voiture-lidar.jpg" alt="Aperçu de Voiture autonome LIDAR" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">Robotique · Navigation</p>
+            <h2>Voiture autonome LIDAR</h2>
+            <p><strong>Objectif :</strong> Étudier et programmer un robot guidé par LIDAR rotatif pour traverser plusieurs parcours, d’abord en simulation puis sur matériel réel.</p>
+            <p><strong>Travail mis en avant :</strong> Mise en place d’essais, observation du comportement, identification des dysfonctionnements et recherche de causes racines.</p>
+            <div class="tags"><span>LIDAR</span><span>Simulation</span><span>Robot mobile</span><span>Tests</span></div>
+            <div class="skill-badges"><span>Vérifier</span><span>Maintenir</span></div>
+            <a class="btn btn-secondary" href="sae-voiture-autonome-lidar.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="haut-parleur" data-category="signal">
+          <div class="project-media"><img src="sae-impedance-haut-parleur.jpg" alt="Aperçu de Impédance haut-parleur &amp; traitement du signal" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">Signal · Mesures</p>
+            <h2>Impédance haut-parleur &amp; traitement du signal</h2>
+            <p><strong>Objectif :</strong> Étudier et tester l’impédance d’un haut-parleur sur différentes plages de fréquence avec une carte électronique spécifique.</p>
+            <p><strong>Travail mis en avant :</strong> Exploitation de signaux, mesures, validation de fonctionnement, corrélation sinusoïdale et FFT.</p>
+            <div class="tags"><span>FFT</span><span>Corrélation</span><span>Mesure</span><span>Oscilloscope</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Vérifier</span></div>
+            <a class="btn btn-secondary" href="sae-impedance-haut-parleur-traitement-signal.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="moteur-fpga" data-category="embarque">
+          <div class="project-media"><img src="sae-moteur-fpga.jpg" alt="Aperçu de Commande d’un moteur synchrone sur FPGA" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">FPGA · Commande moteur</p>
+            <h2>Commande d’un moteur synchrone sur FPGA</h2>
+            <p><strong>Objectif :</strong> Étudier le fonctionnement d’un moteur synchrone, le commander et afficher son niveau de rotation sur carte FPGA.</p>
+            <p><strong>Travail mis en avant :</strong> Analyse fonctionnelle, logique de commande, implantation sur FPGA et vérification du comportement attendu.</p>
+            <div class="tags"><span>FPGA</span><span>VHDL</span><span>Moteur synchrone</span><span>Commande</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Vérifier</span></div>
+            <a class="btn btn-secondary" href="sae-moteur-synchrone-fpga.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+        <article class="project-card reveal" id="robot-obstacle" data-category="electronique">
+          <div class="project-media"><img src="sae-robot-obstacles.jpg" alt="Aperçu de Robot éviteur d’obstacles : carte principale" loading="lazy"></div>
+          <div class="project-content">
+            <p class="project-kicker">Électronique · PCB</p>
+            <h2>Robot éviteur d’obstacles : carte principale</h2>
+            <p><strong>Objectif :</strong> Construire les cartes électroniques d’un robot éviteur d’obstacles, de la schématisation à l’implantation puis à la programmation.</p>
+            <p><strong>Travail mis en avant :</strong> Réalisation de la carte principale reliant les cartes du robot à la Raspberry Pi Pico et à l’alimentation.</p>
+            <div class="tags"><span>PCB</span><span>Raspberry Pi Pico</span><span>Alimentation</span><span>Capteurs</span></div>
+            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Intégrer</span></div>
+            <a class="btn btn-secondary" href="sae-robot-eviteur-obstacles-carte-principale.pdf" target="_blank" rel="noopener">Ouvrir la fiche PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">Rudy Gaillot</a>
+        <p>Portfolio BUT GEII parcours Électronique et Systèmes Embarqués.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <a href="competences.html">Compétences</a>
+        <a href="sae.html">SAE / projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:rudy.gaillot10@gmail.com">rudy.gaillot10@gmail.com</a>
+        <p class="muted">Site statique hébergé avec GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
