@@ -3,115 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stages de Rudy Gaillot chez Aube Électronique : machine de découpe alimentaire, trajectoires, STM32, Qt, électronique.">
+  <meta name="description" content="Stages de Rudy Gaillot chez Aube Électronique : bureau d’études, machine, software, IHM, électronique et intégration.">
   <title>Stages | Rudy Gaillot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="experience">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <header class="site-header">
     <nav class="navbar" aria-label="Navigation principale">
-      <a class="logo" href="index.html"><span class="logo-mark">RG</span><span>Rudy Gaillot <small>Portfolio GEII</small></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <a class="brand" href="index.html" aria-label="Accueil du portfolio de Rudy Gaillot">
+        <span class="brand-symbol" aria-hidden="true"><span></span></span>
+        <span class="brand-text"><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span><em>Menu</em></button>
       <div class="nav-links" id="menu">
         <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="sae.html">SAE</a>
-        <a href="stages.html" aria-current="page">Stages</a>
-        <a href="documents.html">Documents</a>
+<a href="competences.html">Compétences</a>
+<a href="sae.html">SAE / Projets</a>
+<a href="stages.html" aria-current="page">Stages</a>
+<a href="documents.html">Documents</a>
       </div>
     </nav>
   </header>
-
   <main id="contenu">
-    <section class="page-hero">
-      <div class="page-hero-inner">
-        <p class="eyebrow">Expérience professionnelle</p>
-        <h1>Stages et missions en entreprise</h1>
-        <p>Mes expériences chez Aube Électronique m’ont permis de relier le développement logiciel, l’électronique, la commande moteur, la documentation et l’intégration sur prototype.</p>
-      </div>
-    </section>
 
-    <section class="section compact">
-      <div class="section-title">
-        <h2>Parcours en entreprise</h2>
-        <p>Une chronologie simple pour comprendre l’évolution de mes missions.</p>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">Mars 2026 - Juin 2026</div>
-          <div>
-            <h3>Stage BUT3 - Aube Électronique</h3>
-            <p>Poursuite du développement d’une machine de découpe alimentaire : optimisation des trajectoires, simulation, interface opérateur, sauvegardes, communication STM32 et validation sur prototype.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-date">Avril 2025 & Juin - Juillet 2025</div>
-          <div>
-            <h3>CDD - Bureau d’études</h3>
-            <p>Développement logiciel industriel, programmation d’IHM et logique de fonctionnement machine.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-date">Janvier 2025 - Mars 2025</div>
-          <div>
-            <h3>Stage BUT2 - Aube Électronique</h3>
-            <p>Initialisation d’une machine agroalimentaire : cahier des charges, choix de composants et programmation Raspberry Pi.</p>
-          </div>
-        </article>
-      </div>
+    <section class="page-hero circuit-bg small"><div class="page-hero-content reveal"><p class="eyebrow"><span></span>Stages & expérience</p><h1>Du portfolio étudiant au contexte industriel.</h1><p>Cette page met en valeur mes missions en bureau d’études : analyse du besoin, conception, développement, intégration et documentation.</p></div></section>
+    <section class="section stage-layout">
+      <article class="stage-feature reveal" id="stage-but3">
+        <div class="stage-image"><img src="assets/img/previews/rapport-stage-but3.jpg" alt="Aperçu du rapport de stage BUT3" loading="lazy"></div>
+        <div><p class="project-kicker">Aube Électronique · Stage BUT3</p><h2>Développement d’une machine de découpe alimentaire</h2><p>Mission orientée intégration industrielle : poursuite du développement machine, IHM, trajectoires, communication avec STM32, drivers moteurs, essais et fiabilisation logicielle.</p><ul class="check-list"><li>Développement en C++/Qt et amélioration de l’IHM.</li><li>Gestion de trajectoires, simulation et affichage de progression.</li><li>Communication avec carte STM32 et logique de commande.</li><li>Tests sur prototype et validation progressive.</li><li>Documentation et transmission du travail réalisé.</li></ul><a class="btn btn-primary" href="documents/rapport-stage-but3-aube-electronique-2026.pdf" target="_blank" rel="noopener">Ouvrir le rapport BUT3</a></div>
+      </article>
+      <article class="stage-feature reveal" id="stage-but2">
+        <div class="stage-image"><img src="assets/img/previews/rapport-stage-but2.jpg" alt="Aperçu du rapport de stage BUT2" loading="lazy"></div>
+        <div><p class="project-kicker">Aube Électronique · Stage BUT2</p><h2>Conception, cahier des charges et développement software</h2><p>Stage en bureau d’études avec rédaction de cahier des charges, choix techniques, conception de schémas, élaboration de nomenclature et participation à la production.</p><ul class="check-list"><li>Analyse du besoin client et contraintes de conception.</li><li>Choix des composants, moteurs, sécurité et alimentation.</li><li>Interface utilisateur et logique de fonctionnement machine.</li><li>Participation à la fabrication et à la validation.</li></ul><a class="btn btn-secondary" href="documents/rapport-stage-but2-aube-electronique-2025.pdf" target="_blank" rel="noopener">Ouvrir le rapport BUT2</a></div>
+      </article>
     </section>
+    <section class="section surface"><div class="section-heading reveal"><p class="eyebrow"><span></span>Chronologie</p><h2>Parcours résumé.</h2></div><div class="timeline reveal"><div><time>2023 - 2026</time><h3>BUT GEII - parcours ESE</h3><p>IUT de Troyes : électronique, informatique industrielle, automatisme, systèmes embarqués, mesure et intégration.</p></div><div><time>2025</time><h3>Stage BUT2 - Aube Électronique</h3><p>Cahier des charges, conception, software, schémas électriques et participation à la production.</p></div><div><time>2025</time><h3>CDD bureau d’études - Aube Électronique</h3><p>Développement logiciel industriel et logique de fonctionnement machine.</p></div><div><time>2026</time><h3>Stage BUT3 - Aube Électronique</h3><p>Développement machine, Qt, trajectoires, STM32, essais et intégration.</p></div></div></section>
 
-    <section class="section compact">
-      <div class="section-title">
-        <h2>Stage BUT3 : machine de découpe alimentaire</h2>
-        <p>La mission principale consistait à passer d’un logiciel de démonstration vers une chaîne plus fiable et testable sur prototype.</p>
-      </div>
-      <div class="grid two">
-        <article class="card">
-          <div class="icon">🧭</div>
-          <h3>Planification de trajectoires</h3>
-          <p>Conversion de formes graphiques en segments, choix de points de départ, réduction des déplacements à vide, gestion des trous et contours fermés, préparation de profils de mouvement.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🖥️</div>
-          <h3>IHM, simulation et sauvegarde</h3>
-          <p>Travail sur l’interface C++/Qt, affichage de progression, simulation, sauvegarde et rechargement des dispositions, fiabilisation des données JSON.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🔌</div>
-          <h3>Communication STM32</h3>
-          <p>Préparation de données cohérentes avec la commande des moteurs, échanges avec la carte NUCLEO-G491RE et prise en compte des retours d’état.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🧪</div>
-          <h3>Validation sur prototype</h3>
-          <p>Essais sur portique trois axes avec un stylo à la place de l’outil de découpe hydraulique pour vérifier l’échelle, les axes et l’ordre des mouvements.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section compact">
-      <div class="grid two">
-        <div class="panel">
-          <h2>Architecture travaillée</h2>
-          <p>L’architecture sépare les fonctions de haut niveau et la commande temps réel : application C++/Qt pour l’IHM et les calculs, Raspberry Pi 5 prévue pour l’intégration finale, STM32 pour la commande temps réel, drivers SANMOTION pour les moteurs pas à pas.</p>
-          <div class="tags"><span class="tag">Qt</span><span class="tag">Raspberry Pi 5</span><span class="tag">STM32</span><span class="tag">UART</span><span class="tag">Drivers moteurs</span></div>
-        </div>
-        <div class="panel">
-          <h2>Bilan personnel</h2>
-          <p>Ce stage a renforcé ma vision système : une trajectoire logicielle doit rester compatible avec le matériel, les contraintes opérateur, la sécurité, la maintenance et la transmission à l’équipe.</p>
-          <ul class="check-list">
-            <li>Meilleure méthode de débogage sur système complet.</li>
-            <li>Importance de la documentation et des tests reproductibles.</li>
-            <li>Compréhension plus concrète du lien entre logiciel, électronique et mécanique.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
   </main>
-
-  <footer class="footer"><div class="footer-inner"><span>© <span data-year></span> Rudy Gaillot</span><a href="documents.html">Rapports de stage</a></div></footer>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">Rudy Gaillot</a>
+        <p>Portfolio BUT GEII parcours Électronique et Systèmes Embarqués.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <a href="competences.html">Compétences</a>
+        <a href="sae.html">SAE / projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:rudy.gaillot10@gmail.com">rudy.gaillot10@gmail.com</a>
+        <p class="muted">Site statique hébergé avec GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
