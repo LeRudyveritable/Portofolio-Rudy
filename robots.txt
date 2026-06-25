@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://lerudyveritable.github.io/Portofolio-Rudy/sitemap.xml
