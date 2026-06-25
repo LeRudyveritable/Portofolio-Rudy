@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compétences GEII acquises par Rudy Gaillot : concevoir, implanter, intégrer, vérifier et maintenir, avec preuves par SAE et projets.">
+  <title>Compétences GEII | Rudy Gaillot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="skills">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Accueil du portfolio de Rudy Gaillot">
+        <span class="brand-symbol" aria-hidden="true"><span></span></span>
+        <span class="brand-text"><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span><em>Menu</em></button>
+      <div class="nav-links" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="competences.html" aria-current="page">Compétences</a>
+        <a href="sae.html">SAE / Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+    </nav>
+  </header>
+  <main id="contenu">
+    <section class="page-hero circuit-bg small">
+      <div class="page-hero-content reveal">
+        <p class="eyebrow"><span></span>Compétences GEII</p>
+        <h1>Un bilan de compétences construit avec mes SAE et mes stages.</h1>
+        <p>Cette page met en valeur les compétences acquises pendant mon BUT GEII parcours Électronique et Systèmes Embarqués. Chaque compétence est reliée à des apprentissages critiques et à des preuves concrètes.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="competence-full-grid">
+        <article class="competence-full-card reveal" id="concevoir">
+          <div class="competence-header"><span>01</span><div><h2>Concevoir</h2><p>Analyser un besoin et proposer une solution technique cohérente.</p></div></div>
+          <p><strong>Niveau acquis :</strong> je sais partir d’un objectif ou d’un problème technique pour identifier les fonctions attendues, les contraintes et l’architecture générale d’une solution.</p>
+          <h3>Apprentissages critiques travaillés</h3>
+          <ul class="ac-list">
+            <li><strong>AC11.01</strong> · Produire une analyse fonctionnelle d’un système simple.</li>
+            <li><strong>AC21.01</strong> · Proposer des solutions techniques liées à l’analyse fonctionnelle.</li>
+            <li><strong>AC21.02</strong> · Dérisquer les solutions techniques retenues.</li>
+          </ul>
+          <div class="proof-links">
+            <a href="sae.html#haut-parleur">Impédance haut-parleur</a>
+            <a href="sae.html#moteur-fpga">Moteur synchrone FPGA</a>
+            <a href="sae.html#robot-obstacle">Carte robot éviteur</a>
+            <a href="sae.html#regulation-ltg">Régulation LTG</a>
+          </div>
+        </article>
+
+        <article class="competence-full-card reveal" id="implanter">
+          <div class="competence-header"><span>02</span><div><h2>Implanter</h2><p>Réaliser une solution matérielle ou logicielle exploitable.</p></div></div>
+          <p><strong>Niveau acquis :</strong> je sais transformer une architecture en réalisation : carte électronique, câblage, logique FPGA, programme, configuration Home Assistant ou interface de commande.</p>
+          <h3>Apprentissages critiques travaillés</h3>
+          <ul class="ac-list">
+            <li><strong>AC24.01ESE</strong> · Appliquer une procédure de fabrication pour implanter les composants matériels et/ou logiciels dans un système.</li>
+            <li><strong>AC24.02ESE</strong> · Évaluer la conformité du système réalisé.</li>
+            <li>Respecter les contraintes d’implantation : lisibilité, sécurité, alimentation, connectique et documentation.</li>
+          </ul>
+          <div class="proof-links">
+            <a href="sae.html#sae0-carte">SAE 0 carte électronique</a>
+            <a href="sae.html#moteur-fpga">Moteur synchrone FPGA</a>
+            <a href="sae.html#robot-obstacle">Carte robot éviteur</a>
+            <a href="sae.html#regulation-ltg">ESP32-H2 / relais</a>
+          </div>
+        </article>
+
+        <article class="competence-full-card reveal" id="integrer">
+          <div class="competence-header"><span>03</span><div><h2>Intégrer</h2><p>Faire fonctionner ensemble plusieurs sous-systèmes.</p></div></div>
+          <p><strong>Niveau acquis :</strong> je sais relier capteurs, actionneurs, alimentation, cartes électroniques, réseau et logiciel afin d’obtenir un système complet et cohérent.</p>
+          <h3>Apprentissages critiques travaillés</h3>
+          <ul class="ac-list">
+            <li>Associer plusieurs éléments techniques dans une même chaîne fonctionnelle.</li>
+            <li>Interfacer capteurs, actionneurs, relais, cartes électroniques et outils de supervision.</li>
+            <li>Vérifier la cohérence entre la partie énergie, la commande et le comportement attendu.</li>
+            <li>Adapter l’intégration aux contraintes du terrain : robot mobile, armoire électrique, local technique ou prototype industriel.</li>
+          </ul>
+          <div class="proof-links">
+            <a href="sae.html#sae3-tri-automatisme">Automatisme tri de pièces</a>
+            <a href="sae.html#sae4-tri-energie">Énergie tri de pièces</a>
+            <a href="sae.html#robot-obstacle">Robot éviteur d’obstacles</a>
+            <a href="sae.html#regulation-ltg">Home Assistant / Zigbee</a>
+          </div>
+        </article>
+
+        <article class="competence-full-card reveal" id="verifier">
+          <div class="competence-header"><span>04</span><div><h2>Vérifier</h2><p>Mesurer, tester et valider le comportement d’un système.</p></div></div>
+          <p><strong>Niveau acquis :</strong> je sais construire des essais, interpréter des mesures et comparer le fonctionnement réel à une consigne, à un cahier des charges ou à un comportement attendu.</p>
+          <h3>Apprentissages critiques travaillés</h3>
+          <ul class="ac-list">
+            <li><strong>AC12.01</strong> · Appliquer une procédure d’essais.</li>
+            <li><strong>AC12.02</strong> · Identifier un dysfonctionnement.</li>
+            <li><strong>AC22.01</strong> · Identifier les tests et mesures à mettre en place pour valider le fonctionnement d’un système.</li>
+            <li>Utiliser des instruments et méthodes adaptés : multimètre, oscilloscope, capteurs, simulation et essais progressifs.</li>
+          </ul>
+          <div class="proof-links">
+            <a href="sae.html#sae1-multimetre">SAE 1 multimètre</a>
+            <a href="sae.html#haut-parleur">Impédance haut-parleur</a>
+            <a href="sae.html#lidar">Voiture LIDAR</a>
+            <a href="sae.html#regulation-ltg">Consigne 22 °C</a>
+          </div>
+        </article>
+
+        <article class="competence-full-card reveal" id="maintenir">
+          <div class="competence-header"><span>05</span><div><h2>Maintenir</h2><p>Diagnostiquer, corriger et améliorer une solution.</p></div></div>
+          <p><strong>Niveau acquis :</strong> je sais rechercher la cause d’un dysfonctionnement, proposer une amélioration et expliquer les limites restantes d’un système technique.</p>
+          <h3>Apprentissages critiques travaillés</h3>
+          <ul class="ac-list">
+            <li><strong>AC23.03</strong> · Diagnostiquer un dysfonctionnement dans un système.</li>
+            <li><strong>AC23.04</strong> · Identifier la cause racine du dysfonctionnement.</li>
+            <li>Utiliser la mesure et l’observation pour localiser un défaut matériel, logiciel ou d’intégration.</li>
+            <li>Proposer des évolutions réalistes pour fiabiliser ou améliorer la solution.</li>
+          </ul>
+          <div class="proof-links">
+            <a href="sae.html#lidar">Diagnostic robot LIDAR</a>
+            <a href="sae.html#sae4-tri-energie">Contrôle armoire électrique</a>
+            <a href="sae.html#regulation-ltg">Retour de flux / ventilation</a>
+            <a href="stages.html#stage-but3">Stage BUT3</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface" id="matrice-competences">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span>Matrice de preuves</p>
+        <h2>Les réalisations associées aux compétences.</h2>
+        <p>Chaque ligne renvoie vers une SAE ou un projet qui prouve la compétence travaillée.</p>
+      </div>
+      <div class="proof-matrix reveal">
+        <div class="matrix-row matrix-head"><span>Réalisation</span><span>Année</span><span>Compétences principales</span><span>Preuve</span></div>
+        <div class="matrix-row"><span>SAE 0 · Carte électronique</span><span>1re année</span><span>Concevoir · Implanter · Vérifier</span><a href="sae.html#sae0-carte">Voir</a></div>
+        <div class="matrix-row"><span>SAE 1 · Multimètre</span><span>1re année</span><span>Vérifier · Maintenir</span><a href="sae.html#sae1-multimetre">Voir</a></div>
+        <div class="matrix-row"><span>SAE 2 · Régulateur de température</span><span>1re année</span><span>Concevoir · Implanter · Vérifier</span><a href="sae.html#sae2-regulateur">Voir</a></div>
+        <div class="matrix-row"><span>SAE 3 · Automatisme tri de pièces</span><span>1re année</span><span>Implanter · Intégrer · Vérifier</span><a href="sae.html#sae3-tri-automatisme">Voir</a></div>
+        <div class="matrix-row"><span>SAE 4 · Énergie tri de pièces</span><span>1re année</span><span>Intégrer · Vérifier · Maintenir</span><a href="sae.html#sae4-tri-energie">Voir</a></div>
+        <div class="matrix-row"><span>SAE 5 · Robot joueur de tennis</span><span>1re année</span><span>Concevoir · Implanter · Intégrer · Vérifier</span><a href="sae.html#sae5-robot-tennis">Voir</a></div>
+        <div class="matrix-row"><span>Voiture autonome LIDAR</span><span>2e année</span><span>Vérifier · Maintenir</span><a href="sae.html#lidar">Voir</a></div>
+        <div class="matrix-row"><span>Impédance haut-parleur</span><span>2e année</span><span>Concevoir · Vérifier</span><a href="sae.html#haut-parleur">Voir</a></div>
+        <div class="matrix-row"><span>Moteur synchrone sur FPGA</span><span>2e année</span><span>Concevoir · Implanter · Vérifier</span><a href="sae.html#moteur-fpga">Voir</a></div>
+        <div class="matrix-row"><span>Robot éviteur d’obstacles</span><span>2e année</span><span>Concevoir · Implanter · Intégrer</span><a href="sae.html#robot-obstacle">Voir</a></div>
+        <div class="matrix-row"><span>Régulation température local LTG</span><span>3e année</span><span>Concevoir · Implanter · Intégrer · Vérifier · Maintenir</span><a href="sae.html#regulation-ltg">Voir</a></div>
+        <div class="matrix-row"><span>Stage BUT3 · Aube Électronique</span><span>3e année</span><span>Concevoir · Implanter · Intégrer · Vérifier · Maintenir</span><a href="stages.html#stage-but3">Voir</a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span>Synthèse</p>
+        <h2>Une progression cohérente vers les systèmes embarqués.</h2>
+        <p>Mon parcours part des bases électroniques et de la mesure, puis évolue vers l’automatisme, la robotique, le FPGA, le traitement du signal, la communication et l’intégration de systèmes complets.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">Rudy Gaillot</a>
+        <p>Portfolio BUT GEII parcours Électronique et Systèmes Embarqués.</p>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <a href="competences.html">Compétences</a>
+        <a href="sae.html">SAE / projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="documents.html">Documents</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:rudy.gaillot10@gmail.com">rudy.gaillot10@gmail.com</a>
+        <p class="muted">Électronique · automatisme · systèmes embarqués.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
