@@ -1,114 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Réalisations SAE de Rudy Gaillot : robotique, électronique, FPGA, traitement du signal et systèmes embarqués.">
-  <title>SAE et projets | Rudy Gaillot</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SAE et projets GEII de Rudy Gaillot.">
+  <title>Rudy Gaillot | Portfolio BUT GEII</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="projects">
+<body data-page="sae">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <a class="brand" href="index.html" aria-label="Accueil du portfolio de Rudy Gaillot">
-        <span class="brand-symbol" aria-hidden="true"><span></span></span>
-        <span class="brand-text"><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span><em>Menu</em></button>
-      <div class="nav-links" id="menu">
-        <a href="index.html">Accueil</a>
-<a href="competences.html">Compétences</a>
+  <header class="topbar" data-header>
+    <a class="brand" href="index.html" aria-label="Accueil du portfolio">
+      <span class="brand-chip">RG</span>
+      <span><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="index.html" >Accueil</a>
+<a href="competences.html" >Compétences</a>
 <a href="sae.html" aria-current="page">SAE / Projets</a>
-<a href="stages.html">Stages</a>
-<a href="documents.html">Documents</a>
-      </div>
-    </nav>
+<a href="stages.html" >Stages</a>
+<a href="documents.html" >Documents</a></nav>
   </header>
   <main id="contenu">
 
-    <section class="page-hero circuit-bg small"><div class="page-hero-content reveal"><p class="eyebrow"><span></span>SAE & réalisations</p><h1>Des projets présentés clairement, pas seulement des PDF.</h1><p>Chaque SAE affiche directement les informations importantes sur le site : contexte, objectif, rôle, outils, compétences et lien vers le document complet.</p></div></section>
-    <section class="section no-bottom"><div class="filter-bar reveal"><button class="filter-btn active" data-filter="all" type="button">Tout</button><button class="filter-btn" data-filter="robotique" type="button">Robotique</button><button class="filter-btn" data-filter="electronique" type="button">Électronique</button><button class="filter-btn" data-filter="embarque" type="button">Embarqué / FPGA</button><button class="filter-btn" data-filter="signal" type="button">Signal</button></div></section>
-    <section class="section project-grid" id="projets">
-        <article class="project-card reveal" id="lidar" data-category="robotique">
-          <div class="project-media"><img src="assets/img/previews/sae-voiture-lidar.jpg" alt="Aperçu de Voiture autonome LIDAR" loading="lazy"></div>
-          <div class="project-content">
-            <p class="project-kicker">Robotique · Navigation</p>
-            <h2>Voiture autonome LIDAR</h2>
-            <p><strong>Objectif :</strong> Étudier et programmer un robot guidé par LIDAR rotatif pour lui faire traverser plusieurs parcours, d’abord en simulation puis sur matériel réel.</p>
-            <p><strong>Mon apport :</strong> Mise en place d’essais, observation du comportement, identification des dysfonctionnements et recherche de causes racines.</p>
-            <div class="tags"><span>LIDAR</span><span>Simulation</span><span>Robot mobile</span><span>Tests</span><span>Diagnostic</span></div>
-            <div class="skill-badges"><span>Vérifier</span><span>Maintenir</span></div>
-            <a class="btn btn-secondary" href="documents/sae-voiture-autonome-lidar.pdf" target="_blank" rel="noopener">Ouvrir la preuve PDF</a>
-          </div>
-        </article>
+<section class="page-hero compact electronics-grid">
+  <p class="kicker"><span></span>SAE / réalisations</p>
+  <h1>Des projets présentés comme des fiches techniques lisibles.</h1>
+  <p>Chaque réalisation contient l’objectif, mon travail, les compétences associées et le document de preuve.</p>
+</section>
 
-        <article class="project-card reveal" id="haut-parleur" data-category="signal">
-          <div class="project-media"><img src="assets/img/previews/sae-impedance-haut-parleur.jpg" alt="Aperçu de Impédance haut-parleur &amp; traitement du signal" loading="lazy"></div>
-          <div class="project-content">
-            <p class="project-kicker">Signal · Mesures</p>
-            <h2>Impédance haut-parleur & traitement du signal</h2>
-            <p><strong>Objectif :</strong> Étudier et tester l’impédance d’un haut-parleur sur différentes plages de fréquence à l’aide d’une carte électronique spécifique.</p>
-            <p><strong>Mon apport :</strong> Exploitation de signaux, mesures, validation de fonctionnement et utilisation de méthodes comme la corrélation sinusoïdale et la FFT.</p>
-            <div class="tags"><span>FFT</span><span>Corrélation</span><span>Carte test</span><span>Mesure</span><span>Oscilloscope</span></div>
-            <div class="skill-badges"><span>Concevoir</span><span>Vérifier</span></div>
-            <a class="btn btn-secondary" href="documents/sae-impedance-haut-parleur-traitement-signal.pdf" target="_blank" rel="noopener">Ouvrir la preuve PDF</a>
-          </div>
-        </article>
+<section class="section filter-zone reveal" aria-label="Filtres projets">
+  <button class="filter active" data-project-filter="all">Tous</button>
+  <button class="filter" data-project-filter="robotique">Robotique</button>
+  <button class="filter" data-project-filter="signal">Signal</button>
+  <button class="filter" data-project-filter="fpga">FPGA</button>
+  <button class="filter" data-project-filter="electronique">Électronique</button>
+</section>
 
-        <article class="project-card reveal" id="moteur-fpga" data-category="embarque">
-          <div class="project-media"><img src="assets/img/previews/sae-moteur-fpga.jpg" alt="Aperçu de Commande d’un moteur synchrone sur FPGA" loading="lazy"></div>
-          <div class="project-content">
-            <p class="project-kicker">FPGA · Commande moteur</p>
-            <h2>Commande d’un moteur synchrone sur FPGA</h2>
-            <p><strong>Objectif :</strong> Étudier le fonctionnement d’un moteur synchrone, le commander avec des interrupteurs et afficher son niveau de rotation via un bandeau LED sur carte FPGA.</p>
-            <p><strong>Mon apport :</strong> Analyse fonctionnelle, logique de commande, implantation sur FPGA et vérification du comportement attendu.</p>
-            <div class="tags"><span>FPGA</span><span>VHDL</span><span>Moteur synchrone</span><span>Bandeau LED</span><span>Commande</span></div>
-            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Vérifier</span></div>
-            <a class="btn btn-secondary" href="documents/sae-moteur-synchrone-fpga.pdf" target="_blank" rel="noopener">Ouvrir la preuve PDF</a>
-          </div>
-        </article>
+<section class="section project-list">
 
-        <article class="project-card reveal" id="robot-obstacle" data-category="electronique">
-          <div class="project-media"><img src="assets/img/previews/sae-robot-obstacles.jpg" alt="Aperçu de Robot éviteur d’obstacles : carte principale" loading="lazy"></div>
-          <div class="project-content">
-            <p class="project-kicker">Électronique · PCB</p>
-            <h2>Robot éviteur d’obstacles : carte principale</h2>
-            <p><strong>Objectif :</strong> Construire les cartes électroniques d’un robot éviteur d’obstacles, de la schématisation à l’implantation puis à la programmation.</p>
-            <p><strong>Mon apport :</strong> Réalisation de la carte principale reliant les différentes cartes du robot à la Raspberry Pi Pico et à l’alimentation.</p>
-            <div class="tags"><span>PCB</span><span>Raspberry Pi Pico</span><span>Alimentation</span><span>Capteurs</span><span>Programmation</span></div>
-            <div class="skill-badges"><span>Concevoir</span><span>Implanter</span><span>Intégrer</span></div>
-            <a class="btn btn-secondary" href="documents/sae-robot-eviteur-obstacles-carte-principale.pdf" target="_blank" rel="noopener">Ouvrir la preuve PDF</a>
-          </div>
-        </article>
-    </section>
-    <section class="section surface"><div class="section-heading reveal"><p class="eyebrow"><span></span>Première année</p><h2>Autres SAE prêtes à être développées.</h2><p>Ces cartes sont une base propre : tu pourras ajouter plus tard les photos, captures et détails de chaque projet.</p></div><div class="mini-grid"><article class="mini-card reveal"><span>SAE 0</span><h3>Carte électronique</h3><p>Bases de câblage, schéma, composants et dossier de fabrication.</p></article>
-<article class="mini-card reveal"><span>SAE 1</span><h3>Multimètre</h3><p>Mesure, instrumentation et compréhension des grandeurs électriques.</p></article>
-<article class="mini-card reveal"><span>SAE 2</span><h3>Régulateur de température</h3><p>Analyse fonctionnelle, simulation Tinkercad, prototype et essais.</p></article>
-<article class="mini-card reveal"><span>SAE 3</span><h3>Tri de pièces - automatisme</h3><p>Capteurs, actionneurs, automatisme et compte rendu technique.</p></article>
-<article class="mini-card reveal"><span>SAE 4</span><h3>Tri de pièces - énergie</h3><p>Câblage, protections électriques, essais et VAT.</p></article>
-<article class="mini-card reveal"><span>SAE 5</span><h3>Robot joueur de tennis</h3><p>Tests de continuité, shield, logique embarquée et corrections.</p></article></div></section>
-    <section class="section split-section"><div class="section-heading reveal"><h2>Emplacement prévu pour les vraies photos</h2><p>J’ai ajouté le dossier <code>assets/img/sae/</code>. Tu peux y déposer tes photos de robot, carte FPGA, PCB ou oscilloscope, puis remplacer les aperçus PDF dans <code>sae.html</code>.</p></div><div class="notice-card reveal"><strong>Conseil</strong><p>Pour chaque SAE, 2 ou 3 images suffisent : vue globale, preuve technique, test ou mesure. C’est plus professionnel qu’une galerie trop chargée.</p></div></section>
+    <article class="project-card reveal" id="lidar" data-filter="robotique">
+      <div class="project-image"><img src="assets/img/previews/sae-voiture-lidar.jpg" alt="Aperçu : Voiture autonome LIDAR" loading="lazy"></div>
+      <div class="project-content">
+        <span class="badge">SAE · robotique</span>
+        <h2>Voiture autonome LIDAR</h2>
+        <p>Étudier et programmer un robot guidé par LIDAR rotatif, d’abord en simulation puis sur matériel réel.</p>
+        <div class="detail-grid"><div><strong>Ce que j’ai travaillé</strong><span>Simulation, diagnostic, tests de parcours, compréhension du guidage par capteurs.</span></div><div><strong>Compétences</strong><span>Concevoir · Vérifier · Maintenir</span></div></div>
+        <a class="btn secondary" href="documents/sae-voiture-autonome-lidar.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" id="impedance" data-filter="signal">
+      <div class="project-image"><img src="assets/img/previews/sae-impedance-haut-parleur.jpg" alt="Aperçu : Impédance haut-parleur &amp; traitement du signal" loading="lazy"></div>
+      <div class="project-content">
+        <span class="badge">SAE · signal</span>
+        <h2>Impédance haut-parleur &amp; traitement du signal</h2>
+        <p>Mesurer l’impédance d’un haut-parleur sur différentes plages de fréquence avec une carte électronique dédiée.</p>
+        <div class="detail-grid"><div><strong>Ce que j’ai travaillé</strong><span>Corrélation sinusoïdale, FFT, mesures, validation de la carte de test.</span></div><div><strong>Compétences</strong><span>Concevoir · Vérifier</span></div></div>
+        <a class="btn secondary" href="documents/sae-impedance-haut-parleur-traitement-signal.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" id="moteur" data-filter="fpga">
+      <div class="project-image"><img src="assets/img/previews/sae-moteur-fpga.jpg" alt="Aperçu : Commande moteur synchrone sur FPGA" loading="lazy"></div>
+      <div class="project-content">
+        <span class="badge">SAE · fpga</span>
+        <h2>Commande moteur synchrone sur FPGA</h2>
+        <p>Étudier un moteur synchrone, le commander avec différents interrupteurs et afficher le niveau de rotation par LEDs.</p>
+        <div class="detail-grid"><div><strong>Ce que j’ai travaillé</strong><span>Signaux de commande, carte FPGA, observation du comportement moteur.</span></div><div><strong>Compétences</strong><span>Concevoir · Implanter</span></div></div>
+        <a class="btn secondary" href="documents/sae-moteur-synchrone-fpga.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+      </div>
+    </article>
+
+    <article class="project-card reveal" id="robot" data-filter="electronique">
+      <div class="project-image"><img src="assets/img/previews/sae-robot-obstacles.jpg" alt="Aperçu : Robot éviteur d’obstacles : carte principale" loading="lazy"></div>
+      <div class="project-content">
+        <span class="badge">SAE · electronique</span>
+        <h2>Robot éviteur d’obstacles : carte principale</h2>
+        <p>Concevoir la carte principale d’un robot éviteur d’obstacles reliant les sous-cartes à la Raspberry Pi Pico et à l’alimentation.</p>
+        <div class="detail-grid"><div><strong>Ce que j’ai travaillé</strong><span>Schématisation, implantation, intégration système, vérification de la carte.</span></div><div><strong>Compétences</strong><span>Concevoir · Implanter</span></div></div>
+        <a class="btn secondary" href="documents/sae-robot-eviteur-obstacles-carte-principale.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+      </div>
+    </article>
+</section>
+
+<section class="section callout reveal">
+  <div>
+    <p class="kicker"><span></span>Photos de SAE</p>
+    <h2>Emplacement prévu pour ajouter tes vraies photos.</h2>
+    <p>Pour personnaliser encore plus le portfolio, ajoute ensuite tes photos de robot, carte électronique, oscilloscope, FPGA ou maquette dans <code>docs/assets/img/sae/</code>, puis remplace les images d’aperçu dans <code>sae.html</code>.</p>
+  </div>
+</section>
 
   </main>
   <footer class="footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
       <div>
-        <a class="footer-brand" href="index.html">Rudy Gaillot</a>
+        <strong>Rudy Gaillot</strong>
         <p>Portfolio BUT GEII parcours Électronique et Systèmes Embarqués.</p>
       </div>
-      <div>
-        <h2>Navigation</h2>
+      <div class="footer-links">
         <a href="competences.html">Compétences</a>
-        <a href="sae.html">SAE / projets</a>
+        <a href="sae.html">SAE</a>
         <a href="stages.html">Stages</a>
         <a href="documents.html">Documents</a>
       </div>
       <div>
-        <h2>Contact</h2>
         <a href="mailto:rudy.gaillot10@gmail.com">rudy.gaillot10@gmail.com</a>
         <p class="muted">Site statique hébergé avec GitHub Pages.</p>
       </div>

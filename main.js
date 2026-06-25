@@ -1,46 +1,33 @@
-const toggle = document.querySelector('.nav-toggle');
-const menu = document.querySelector('#menu');
-if (toggle && menu) {
-  toggle.addEventListener('click', () => {
-    const open = menu.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
+
+const menuButton = document.querySelector('.menu-button');
+const nav = document.querySelector('.nav');
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 }
-const revealItems = document.querySelectorAll('.reveal');
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+const header = document.querySelector('[data-header]');
+window.addEventListener('scroll', () => {
+  if (!header) return;
+  header.classList.toggle('scrolled', window.scrollY > 12);
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+function setupFilters(buttonSelector, itemSelector, attrName) {
+  const buttons = document.querySelectorAll(buttonSelector);
+  const items = document.querySelectorAll(itemSelector);
+  buttons.forEach(button => button.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+    const value = button.dataset[attrName];
+    items.forEach(item => {
+      const match = value === 'all' || item.dataset[attrName.replace('Filter','')] === value;
+      item.style.display = match ? '' : 'none';
     });
-  }, { threshold: 0.12 });
-  revealItems.forEach(item => observer.observe(item));
-} else {
-  revealItems.forEach(item => item.classList.add('visible'));
+  }));
 }
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    const filter = button.dataset.filter;
-    projectCards.forEach(card => {
-      card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.category !== filter);
-    });
-  });
-});
-const docButtons = document.querySelectorAll('.doc-filter');
-const docCards = document.querySelectorAll('.doc-card');
-docButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    docButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    const filter = button.dataset.docFilter;
-    docCards.forEach(card => {
-      card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.docCategory !== filter);
-    });
-  });
-});
+setupFilters('[data-project-filter]', '.project-card', 'projectFilter');
+setupFilters('[data-doc-filter]', '.doc-card', 'docFilter');

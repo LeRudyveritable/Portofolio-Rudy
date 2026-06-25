@@ -1,117 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compétences BUT GEII de Rudy Gaillot : concevoir, vérifier, maintenir, implanter et intégrer.">
-  <title>Compétences | Rudy Gaillot</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compétences GEII de Rudy Gaillot, avec preuves issues des SAE et stages.">
+  <title>Rudy Gaillot | Portfolio BUT GEII</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="skills">
+<body data-page="competences">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <a class="brand" href="index.html" aria-label="Accueil du portfolio de Rudy Gaillot">
-        <span class="brand-symbol" aria-hidden="true"><span></span></span>
-        <span class="brand-text"><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span><em>Menu</em></button>
-      <div class="nav-links" id="menu">
-        <a href="index.html">Accueil</a>
+  <header class="topbar" data-header>
+    <a class="brand" href="index.html" aria-label="Accueil du portfolio">
+      <span class="brand-chip">RG</span>
+      <span><strong>Rudy Gaillot</strong><small>BUT GEII · Systèmes embarqués</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Navigation principale"><a href="index.html" >Accueil</a>
 <a href="competences.html" aria-current="page">Compétences</a>
-<a href="sae.html">SAE / Projets</a>
-<a href="stages.html">Stages</a>
-<a href="documents.html">Documents</a>
-      </div>
-    </nav>
+<a href="sae.html" >SAE / Projets</a>
+<a href="stages.html" >Stages</a>
+<a href="documents.html" >Documents</a></nav>
   </header>
   <main id="contenu">
 
-    <section class="page-hero circuit-bg small">
-      <div class="page-hero-content reveal">
-        <p class="eyebrow"><span></span>Fiche compétences GEII</p>
-        <h1>Des compétences reliées à des preuves concrètes.</h1>
-        <p>Cette page synthétise les compétences du BUT GEII et montre comment elles apparaissent dans mes SAE, mes stages et mes documents techniques.</p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="competency-grid">
-        <article class="competency-card reveal">
-          <div class="competency-top"><span>01</span><strong>Concevoir</strong></div>
-          <p>Analyser un besoin, produire une analyse fonctionnelle et choisir une architecture matérielle ou logicielle.</p>
-          <div class="evidence"><small>Preuve / exemple</small><p>Cahiers des charges de machine, choix techniques, cartes électroniques, simulation et dérisquage.</p></div>
-          <div class="tags"><span>Analyse fonctionnelle</span><span>Cahier des charges</span><span>Architecture</span></div>
-          <a class="text-link" href="documents/fiche-competences-sae-1ere-annee.pdf" target="_blank" rel="noopener">Voir une preuve PDF</a>
-        </article>
+<section class="page-hero compact electronics-grid">
+  <p class="kicker"><span></span>Compétences BUT GEII</p>
+  <h1>Une lecture claire des compétences et des preuves associées.</h1>
+  <p>Cette page relie les apprentissages GEII aux réalisations concrètes : SAE, prototypes, stages, tests et documents.</p>
+</section>
 
-        <article class="competency-card reveal">
-          <div class="competency-top"><span>02</span><strong>Vérifier</strong></div>
-          <p>Préparer des essais, choisir les mesures utiles et valider le comportement d’un système.</p>
-          <div class="evidence"><small>Preuve / exemple</small><p>Procédures d’essais, mesures oscilloscope, FFT/corrélation, tests de continuité, VAT et correction de défauts.</p></div>
-          <div class="tags"><span>Mesure</span><span>Validation</span><span>Diagnostic</span></div>
-          <a class="text-link" href="documents/sae-impedance-haut-parleur-traitement-signal.pdf" target="_blank" rel="noopener">Voir une preuve PDF</a>
-        </article>
-
-        <article class="competency-card reveal">
-          <div class="competency-top"><span>03</span><strong>Maintenir</strong></div>
-          <p>Diagnostiquer un dysfonctionnement, identifier la cause racine et proposer une correction fiable.</p>
-          <div class="evidence"><small>Preuve / exemple</small><p>Tests sur robot LIDAR, corrections software, analyse des erreurs de câblage et fiabilisation progressive.</p></div>
-          <div class="tags"><span>Dysfonctionnement</span><span>Cause racine</span><span>Amélioration</span></div>
-          <a class="text-link" href="documents/sae-voiture-autonome-lidar.pdf" target="_blank" rel="noopener">Voir une preuve PDF</a>
-        </article>
-
-        <article class="competency-card reveal">
-          <div class="competency-top"><span>04</span><strong>Implanter</strong></div>
-          <p>Réaliser une solution matérielle ou logicielle et vérifier sa conformité.</p>
-          <div class="evidence"><small>Preuve / exemple</small><p>Implantation de cartes, programmation FPGA, Raspberry Pi Pico, IHM Qt, routage et prototypage.</p></div>
-          <div class="tags"><span>PCB</span><span>FPGA</span><span>Logiciel</span></div>
-          <a class="text-link" href="documents/sae-robot-eviteur-obstacles-carte-principale.pdf" target="_blank" rel="noopener">Voir une preuve PDF</a>
-        </article>
-
-        <article class="competency-card reveal">
-          <div class="competency-top"><span>05</span><strong>Intégrer</strong></div>
-          <p>Assembler plusieurs sous-systèmes pour obtenir un fonctionnement complet et exploitable.</p>
-          <div class="evidence"><small>Preuve / exemple</small><p>Lien entre interface, contrôle moteur, STM32, drivers, capteurs, alimentation et sécurité machine.</p></div>
-          <div class="tags"><span>Système complet</span><span>IHM</span><span>Essais</span></div>
-          <a class="text-link" href="documents/rapport-stage-but3-aube-electronique-2026.pdf" target="_blank" rel="noopener">Voir une preuve PDF</a>
-        </article>
-      </div>
-    </section>
-    <section class="section split-section surface">
-      <div class="section-heading reveal">
-        <p class="eyebrow"><span></span>Socle technique</p>
-        <h2>Outils et savoir-faire mobilisés.</h2>
-      </div>
-      <div class="tool-cloud reveal"><span>C/C++</span><span>VHDL</span><span>FPGA Intel/Altera Cyclone</span><span>STM32</span><span>Raspberry Pi</span><span>ESP32</span><span>Qt Creator</span><span>KiCad</span><span>LTspice</span><span>Quartus</span><span>Linux</span><span>Git/GitHub</span><span>UART</span><span>I2C</span><span>SPI</span><span>CAN</span><span>Oscilloscope</span><span>GBF</span><span>Multimètre</span><span>MATLAB</span><span>LabVIEW</span><span>Unity Pro</span></div>
-    </section>
-    <section class="section">
-      <div class="section-heading reveal"><p class="eyebrow"><span></span>Progression</p><h2>Une progression de la base électronique à l’intégration industrielle.</h2></div>
-      <div class="timeline reveal">
-        <div><time>1re année</time><h3>Comprendre et prototyper</h3><p>Électronique de base, mesures, analyse fonctionnelle, premières SAE, simulation et dossiers de fabrication.</p></div>
-        <div><time>2e année</time><h3>Concevoir et vérifier</h3><p>Robotique, traitement du signal, FPGA, cartes électroniques, procédures de test et diagnostic.</p></div>
-        <div><time>3e année</time><h3>Intégrer en contexte professionnel</h3><p>Développement IHM, trajectoires, STM32, communication, sécurité et validation de systèmes complets.</p></div>
-      </div>
-    </section>
+<section class="section competence-layout">
+  <aside class="toc-card reveal">
+    <h2>Plan</h2>
+    <a href="#concevoir">Concevoir</a>
+    <a href="#verifier">Vérifier</a>
+    <a href="#maintenir">Maintenir</a>
+    <a href="#implanter">Implanter</a>
+    <a href="#integrer">Intégrer</a>
+  </aside>
+  <div class="competence-stack">
+    <article class="competence-card reveal" id="concevoir">
+      <div><span class="badge">01 · Concevoir</span><h2>Analyser un besoin et choisir une solution technique</h2><p>Je sais produire une analyse fonctionnelle, dérisquer une solution et justifier des choix matériels ou logiciels.</p></div>
+      <ul class="check-list"><li>Analyse fonctionnelle de systèmes simples.</li><li>Choix de composants et d’architecture.</li><li>Prototypage et dossier de fabrication.</li></ul>
+      <a class="btn secondary" href="documents/fiche-competences-sae-1ere-annee.pdf" target="_blank" rel="noopener">Preuve : fiche compétences</a>
+    </article>
+    <article class="competence-card reveal" id="verifier">
+      <div><span class="badge">02 · Vérifier</span><h2>Tester, mesurer et valider le fonctionnement</h2><p>Les SAE m’ont permis de mettre en place des essais, des mesures et des diagnostics de dysfonctionnement.</p></div>
+      <ul class="check-list"><li>Procédures d’essais et mesures.</li><li>Utilisation d’oscilloscope, multimètre et outils de vérification.</li><li>Validation par simulation puis test matériel.</li></ul>
+      <a class="btn secondary" href="documents/sae-impedance-haut-parleur-traitement-signal.pdf" target="_blank" rel="noopener">Preuve : traitement du signal</a>
+    </article>
+    <article class="competence-card reveal" id="maintenir">
+      <div><span class="badge">03 · Maintenir</span><h2>Diagnostiquer un problème et fiabiliser un système</h2><p>Sur les projets de robotique et en stage, j’ai travaillé sur la détection de dysfonctionnements, la correction et la documentation.</p></div>
+      <ul class="check-list"><li>Diagnostic de cause racine.</li><li>Correction progressive après essais.</li><li>Documentation et transmission du travail.</li></ul>
+      <a class="btn secondary" href="documents/sae-voiture-autonome-lidar.pdf" target="_blank" rel="noopener">Preuve : robot LIDAR</a>
+    </article>
+    <article class="competence-card reveal" id="implanter">
+      <div><span class="badge">04 · Implanter</span><h2>Mettre en œuvre matériel et logiciel dans un système</h2><p>J’ai manipulé cartes, câblage, FPGA, Raspberry Pi Pico, C/C++, VHDL et outils de conception pour implanter des solutions.</p></div>
+      <ul class="check-list"><li>Schématisation et réalisation de carte.</li><li>Implantation logicielle et matérielle.</li><li>Évaluation de conformité.</li></ul>
+      <a class="btn secondary" href="documents/sae-robot-eviteur-obstacles-carte-principale.pdf" target="_blank" rel="noopener">Preuve : carte robot</a>
+    </article>
+    <article class="competence-card reveal" id="integrer">
+      <div><span class="badge">05 · Intégrer</span><h2>Relier logiciel, électronique et mécanique</h2><p>Mon stage BUT3 illustre une démarche d’intégration : application Qt, carte STM32, drivers moteurs, trajectoires et tests sur prototype.</p></div>
+      <ul class="check-list"><li>Communication PC / carte de commande.</li><li>Simulation, trajectoires et interface utilisateur.</li><li>Validation sur prototype physique.</li></ul>
+      <a class="btn primary" href="documents/rapport-stage-but3-aube-electronique-2026.pdf" target="_blank" rel="noopener">Preuve : rapport BUT3</a>
+    </article>
+  </div>
+</section>
 
   </main>
   <footer class="footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
       <div>
-        <a class="footer-brand" href="index.html">Rudy Gaillot</a>
+        <strong>Rudy Gaillot</strong>
         <p>Portfolio BUT GEII parcours Électronique et Systèmes Embarqués.</p>
       </div>
-      <div>
-        <h2>Navigation</h2>
+      <div class="footer-links">
         <a href="competences.html">Compétences</a>
-        <a href="sae.html">SAE / projets</a>
+        <a href="sae.html">SAE</a>
         <a href="stages.html">Stages</a>
         <a href="documents.html">Documents</a>
       </div>
       <div>
-        <h2>Contact</h2>
         <a href="mailto:rudy.gaillot10@gmail.com">rudy.gaillot10@gmail.com</a>
         <p class="muted">Site statique hébergé avec GitHub Pages.</p>
       </div>
